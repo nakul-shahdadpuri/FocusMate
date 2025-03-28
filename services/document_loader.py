@@ -5,9 +5,9 @@ from config.settings import DATA_FOLDER
 def pdf_to_text(file_path):
     text = ''
     with open(file_path, 'rb') as file:
-        reader = PyPDF2.PdfFileReader(file)
-        for page_num in range(reader.getNumPages()):
-            text += reader.getPage(page_num).extract_text()
+        reader = PyPDF2.PdfReader(file)  # Updated line
+        for page in reader.pages:
+            text += page.extract_text()
     return text
 
 def load_documents():
