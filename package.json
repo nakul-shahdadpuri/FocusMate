@@ -2,7 +2,7 @@
   "name": "focusmate",
   "version": "1.0.0",
   "description": "FocusMate is a real-time virtual study room where students and professionals can study together, stay accountable, and boost productivity.",
-  "main": "index.js",
+  "main": "client/mateai.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
