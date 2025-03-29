@@ -9,6 +9,4 @@ def generate_answer(context, question):
     for chunk in response:
         if chunk[0] == "response":
             result = chunk[1]
-    
-
     return result
